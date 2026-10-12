@@ -5,7 +5,7 @@ import heroBackground from "../../assets/images/heroBackground.png";
 const Hero = () => {
   return (
     <div
-      className="relative flex h-screen w-full items-center justify-center bg-cover bg-center bg-no-repeat"
+      className="relative flex min-h-screen w-full items-center justify-center bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${heroBackground})` }}
     >
       <Container>

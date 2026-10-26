@@ -4,10 +4,13 @@ const Button = ({ text, variant = "purple" }) => {
     black: "text-neutral-500",
   };
   return (
-    <button className={`rounded-md px-8 py-2 text-md ${variation[variant]}`}>
+    <button
+      className={`text-md cursor-pointer rounded-md px-8 py-2 ${variation[variant]}`}
+    >
       {text}
     </button>
   );
 };
 
 export default Button;
+screenX

@@ -1,6 +1,7 @@
 const Button = ({ text, variant = "purple" }) => {
   const variation = {
-    purple: "bg-primary text-white",
+    purple:
+      "bg-primary text-white inline-block duration-1000 transition-transform hover:scale-90 hover:text-primary hover:bg-transparent hover:border-primary hover:border",
     black: "text-neutral-500",
   };
   return (
@@ -13,4 +14,4 @@ const Button = ({ text, variant = "purple" }) => {
 };
 
 export default Button;
-screenX
+screenX;

@@ -9,8 +9,8 @@ const Navbar = () => {
   }
 
   return (
-    <header className="fixed z-10 w-full py-4">
-      <div className="relative mx-auto flex w-full max-w-7xl items-center justify-between rounded-md bg-white px-4 py-2 lg:bg-transparent lg:py-4">
+    <header className="fixed z-10 w-full py-4 backdrop-blur-2xl">
+      <div className="relative mx-auto flex w-full max-w-7xl items-center justify-between rounded-md bg-white px-4 py-2 lg:py-4">
         {/* logo */}
         <div className="flex items-center justify-center gap-2">
           <div className="h-9 w-8 rounded-md bg-black"></div>

@@ -22,7 +22,12 @@ const Navlink = () => {
       {navs.map((nav, idx) => {
         return (
           <li key={idx}>
-            <a href={nav.link}>{nav.name}</a>
+            <a
+              className="hover:text-primary inline-block transition-transform duration-300 hover:-translate-y-1"
+              href={nav.link}
+            >
+              {nav.name}
+            </a>
           </li>
         );
       })}

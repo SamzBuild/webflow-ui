@@ -5,7 +5,7 @@ const Pricing = () => {
   return (
     <Section>
       <Container>
-        <div className="flex flex-col md:flex-row gap-24 justify-center">
+        <div className="flex flex-col justify-center gap-24 md:flex-row">
           <div className="flex flex-col gap-12">
             <div>
               <h2 className="mb-6 text-6xl font-semibold">Pricing</h2>
@@ -23,13 +23,15 @@ const Pricing = () => {
               </button>
             </div>
           </div>
-          <div className="items-between flex w-full rounded-md max-w-2xl flex-col items-start justify-between bg-white px-16 py-8">
-            <h3 className="text-2xl md:text-3xl font-semibold">Unlimited Services</h3>
+          <div className="flex w-full max-w-xl flex-col gap-5 items-start justify-between rounded-md bg-white px-16 py-8">
+            <h3 className="text-2xl font-semibold md:text-3xl">
+              Unlimited Services
+            </h3>
             <p className="">
               Take a look at some of our recent projects to see how <br /> we've
               helped businesses like yours succeed online.
             </p>
-            <ul className="grid grid-cols-2 grid-rows-3 gap-x-20  gap-y-5">
+            <ul className="grid grid-cols-3 grid-rows-2 gap-x-5 gap-y-3 md:grid-cols-2 md:grid-rows-3 md:gap-x-20 md:gap-y-5">
               <li>Unlimited Requests</li>
               <li>Unlimited Requests</li>
               <li>Unlimited Requests</li>

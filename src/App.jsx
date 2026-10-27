@@ -1,4 +1,6 @@
 import Navbar from "./components/layout/Navbar";
+import Contact from "./components/sections/Contact";
+import FAQ from "./components/sections/FAQ";
 import Hero from "./components/sections/Hero";
 import Pricing from "./components/sections/Pricing";
 import Projects from "./components/sections/Projects";
@@ -13,7 +15,10 @@ const App = () => {
       <Services />
       <Projects />
       <Trusted />
-      <Pricing/>
+      <Pricing />
+      <FAQ />
+      <hr className="text-neutral-400" />
+      <Contact />
     </div>
   );
 };

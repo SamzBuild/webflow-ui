@@ -5,7 +5,7 @@ import rigthProject from "../../assets/images/Rectangle34.png";
 
 const Projects = () => {
   return (
-    <Section>
+    <Section id="works">
       <h2 className="font-heading mb-6 text-center font-bold text-4xl capitalize md:text-6xl">
         Check Our work
       </h2>

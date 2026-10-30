@@ -4,7 +4,7 @@ import Button from "../ui/Button";
 
 const Pricing = () => {
   return (
-    <Section>
+    <Section id="about">
       <Container>
         <div className="flex flex-col justify-center gap-24 md:flex-row">
           <div className="flex flex-col gap-12">

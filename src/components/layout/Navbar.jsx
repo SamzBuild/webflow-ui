@@ -14,7 +14,7 @@ const Navbar = () => {
         {/* logo */}
         <a href="">
           <div className="flex items-center justify-center gap-2">
-            <div className="h-10 w-10 rounded-md bg-black flex justify-center items-center">
+            <div className="flex h-10 w-10 items-center justify-center rounded-md bg-black">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -73,16 +73,16 @@ const Navbar = () => {
             <nav>
               <ul className="font-inter flex flex-col gap-6 text-xl text-black">
                 <li>
-                  <a href="">Home</a>
+                  <a href="#home">Home</a>
                 </li>
                 <li>
-                  <a href="">About</a>
+                  <a href="#about">About</a>
                 </li>
                 <li>
-                  <a href="">How It Works</a>
+                  <a href="#works">How It Works</a>
                 </li>
                 <li>
-                  <a href="">Services</a>
+                  <a href="#services">Services</a>
                 </li>
               </ul>
               <div className="mt-8">

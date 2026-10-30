@@ -7,6 +7,7 @@ const Hero = () => {
     <div
       className="relative flex min-h-screen w-full items-center justify-center bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${heroBackground})` }}
+      id="home"
     >
       <Container>
         <div className="mx-auto w-full text-center md:max-w-xl lg:max-w-4xl">

@@ -3,7 +3,7 @@ import Section from "../layout/Section";
 
 const Services = () => {
   return (
-    <Section>
+    <Section id="services">
       <Container>
         <h2 className="font-heading mb-6 text-4xl font-bold">What We DO</h2>
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-4 lg:grid-rows-2 lg:gap-6">

@@ -7,7 +7,7 @@ const Contact = () => {
     <Section>
       <Container>
         <div className="max-w-2xl mx-auto">
-          <h3 className="font-heading mb-12 text-center text-6xl font-semibold tracking-tight">
+          <h3 className="font-heading mb-12 text-center text-4xl md:text-6xl font-semibold tracking-tight">
             Let's Get In Touch
           </h3>
           <form action="" className="flex flex-col justify-center">

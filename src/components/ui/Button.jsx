@@ -1,12 +1,11 @@
 const Button = ({ text, variant = "purple" }) => {
   const variation = {
-    purple:
-      "bg-primary text-white inline-block duration-1000 transition-transform hover:scale-90 hover:text-primary hover:bg-transparent hover:border-primary hover:border",
-    black: "text-neutral-500",
+    purple: "bg-primary text-white hover:bg-primary/90",
+    black: "text-neutral-500 hover:text-primary",
   };
   return (
     <button
-      className={`text-md cursor-pointer rounded-md px-8 py-2 ${variation[variant]}`}
+      className={`text-md active:scale-95 inline-block cursor-pointer rounded-md px-8 py-2 transition-transform ${variation[variant]}`}
     >
       {text}
     </button>

@@ -1,13 +1,24 @@
 import Section from "../layout/Section";
 import Container from "../layout/Container";
 import Button from "../ui/Button";
+import { motion } from "motion/react";
 
 const Contact = () => {
   return (
     <Section>
       <Container>
-        <div className="max-w-2xl mx-auto">
-          <h3 className="font-heading mb-12 text-center text-4xl md:text-6xl font-semibold tracking-tight">
+        <motion.div
+          initial={{ scale: 0 }}
+          whileInView={{ scale: 1 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{
+            type: "spring",
+            stiffness: 50,
+            damping: 7,
+          }}
+          className="mx-auto max-w-2xl"
+        >
+          <h3 className="font-heading mb-12 text-center text-4xl font-semibold tracking-tight md:text-6xl">
             Let's Get In Touch
           </h3>
           <form action="" className="flex flex-col justify-center">
@@ -16,7 +27,7 @@ const Contact = () => {
             </label>
             <input
               type="email"
-              className="mb-4  rounded-md bg-white px-8 py-2"
+              className="mb-4 rounded-md bg-white px-8 py-2"
               placeholder="example@email.com"
             />
 
@@ -39,9 +50,9 @@ const Contact = () => {
               className="mb-4 rounded-md bg-white px-8 py-2"
             ></textarea>
 
-            <Button type="submit" text="Get In Touch" ></Button>
+            <Button type="submit" text="Get In Touch"></Button>
           </form>
-        </div>
+        </motion.div>
       </Container>
     </Section>
   );

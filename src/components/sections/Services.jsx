@@ -1,13 +1,27 @@
 import Container from "../layout/Container";
 import Section from "../layout/Section";
-
+import { easeInOut, motion } from "motion/react";
 const Services = () => {
   return (
     <Section id="services">
       <Container>
-        <h2 className="font-heading mb-6 text-4xl font-bold">What We DO</h2>
+        <motion.h2
+          initial={{ opacity: 0, x: 200 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ delay: 0.5, ease: easeInOut }}
+          className="font-heading mb-6 text-4xl font-bold"
+        >
+          What We DO
+        </motion.h2>
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-4 lg:grid-rows-2 lg:gap-6">
-          <div className="flex flex-col gap-4 rounded-md border border-black/10 bg-white px-4 py-8 shadow-md lg:col-span-1">
+          <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2, ease: easeInOut }}
+            viewport={{ once: true, amount: 0.3 }}
+            className="flex flex-col gap-4 rounded-md border border-black/10 bg-white px-4 py-8 shadow-md lg:col-span-1"
+          >
             <div className="flex h-10 w-10 items-center justify-center rounded-md bg-gray-100">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -30,9 +44,15 @@ const Services = () => {
               From concept to launch, we create stunning, user-centric websites
               that elevate your brand and engage your audience.
             </p>
-          </div>
+          </motion.div>
 
-          <div className="flex flex-col gap-4 rounded-md border border-black/10 bg-white px-4 py-8 shadow-md lg:col-span-1">
+          <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, ease: easeInOut }}
+            viewport={{ once: true, amount: 0.3 }}
+            className="flex flex-col gap-4 rounded-md border border-black/10 bg-white px-4 py-8 shadow-md lg:col-span-1"
+          >
             <div className="flex h-10 w-10 items-center justify-center rounded-md bg-gray-100">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -54,9 +74,15 @@ const Services = () => {
               From concept to launch, we create stunning, user-centric websites
               that elevate your brand and engage your audience.
             </p>
-          </div>
+          </motion.div>
 
-          <div className="flex flex-col gap-4 rounded-md border border-black/10 bg-white px-4 py-8 shadow-md lg:col-span-1">
+          <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4, ease: easeInOut }}
+            viewport={{ once: true, amount: 0.3 }}
+            className="flex flex-col gap-4 rounded-md border border-black/10 bg-white px-4 py-8 shadow-md lg:col-span-1"
+          >
             <div className="flex h-10 w-10 items-center justify-center rounded-md bg-gray-100">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -79,8 +105,14 @@ const Services = () => {
               From concept to launch, we create stunning, user-centric websites
               that elevate your brand and engage your audience.
             </p>
-          </div>
-          <div className="flex flex-col gap-4 rounded-md border border-black/10 bg-white px-4 py-8 shadow-md lg:col-span-1 lg:row-span-2">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5, ease: easeInOut }}
+            viewport={{ once: true, amount: 0.3 }}
+            className="flex flex-col gap-4 rounded-md border border-black/10 bg-white px-4 py-8 shadow-md lg:col-span-1 lg:row-span-2"
+          >
             <div className="flex h-10 w-10 items-center justify-center rounded-md bg-gray-100">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -101,9 +133,15 @@ const Services = () => {
               that elevate your brand and engage your audience.
             </p>
             <img src="" alt="" />
-          </div>
+          </motion.div>
 
-          <div className="relative flex flex-col justify-between gap-4 rounded-md border border-black/10 bg-white px-4 py-8 shadow-md lg:col-span-2 lg:row-span-1 lg:flex-row lg:gap-0">
+          <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5, ease: easeInOut }}
+            viewport={{ once: true, amount: 0.3 }}
+            className="relative flex flex-col justify-between gap-4 rounded-md border border-black/10 bg-white px-4 py-8 shadow-md lg:col-span-2 lg:row-span-1 lg:flex-row lg:gap-0"
+          >
             <div className="flex flex-col gap-4">
               <div className="flex h-10 w-10 items-center justify-center rounded-md bg-gray-100">
                 <svg
@@ -143,9 +181,15 @@ const Services = () => {
                 />
               </svg>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="flex flex-col gap-4 rounded-md border border-black/10 bg-white px-4 py-8 shadow-md lg:col-span-1">
+          <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.6, ease: easeInOut }}
+            viewport={{ once: true, amount: 0.3 }}
+            className="flex flex-col gap-4 rounded-md border border-black/10 bg-white px-4 py-8 shadow-md lg:col-span-1"
+          >
             <div className="flex h-10 w-10 items-center justify-center rounded-md bg-gray-100">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -168,7 +212,7 @@ const Services = () => {
               From concept to launch, we create stunning, user-centric websites
               that elevate your brand and engage your audience.
             </p>
-          </div>
+          </motion.div>
         </div>
       </Container>
     </Section>

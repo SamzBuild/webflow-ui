@@ -1,3 +1,5 @@
+import { motion } from "motion/react";
+
 const Navlink = () => {
   const navs = [
     {
@@ -22,12 +24,14 @@ const Navlink = () => {
       {navs.map((nav, idx) => {
         return (
           <li key={idx}>
-            <a
+            <motion.a
+              initial={{ opacity: 0, y: -50 }}
+              animate={{ opacity: 1, y: 1 }}
               className="hover:text-primary inline-block transition-transform duration-300 hover:-translate-y-1"
               href={nav.link}
             >
               {nav.name}
-            </a>
+            </motion.a>
           </li>
         );
       })}

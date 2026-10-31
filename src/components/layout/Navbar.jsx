@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Button from "../ui/Button";
 import Navlink from "../ui/Navlink";
+import { motion } from "motion/react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +13,14 @@ const Navbar = () => {
     <header className="fixed z-10 w-full md:py-4 md:backdrop-blur-2xl">
       <div className="relative mx-auto flex w-full max-w-7xl items-center justify-between rounded-md bg-white px-4 py-2 lg:py-4">
         {/* logo */}
-        <a href="">
+        <motion.a
+          href=""
+          whileHover={{
+            scale: 1.05,
+            y: -8,
+            rotate: 2,
+          }}
+        >
           <div className="flex items-center justify-center gap-2">
             <div className="flex h-10 w-10 items-center justify-center rounded-md bg-black">
               <svg
@@ -35,7 +43,7 @@ const Navbar = () => {
               FasterUI
             </span>
           </div>
-        </a>
+        </motion.a>
 
         {/* navlinks deskotop */}
         <nav className="hidden lg:block">

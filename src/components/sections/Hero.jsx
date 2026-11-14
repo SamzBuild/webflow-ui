@@ -20,7 +20,7 @@ const Hero = () => {
           >
             Awesome UI Dark Template for Webflow Agency
           </motion.h1>
-          <Button variant="purple" text="Get in Touch" />
+          <Button style="bg-gray-900 text-white hover:bg-gray-800 hover:text-white" text="Get in Touch" variant="black" />
         </div>
       </Container>
     </div>

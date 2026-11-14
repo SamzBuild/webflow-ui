@@ -1,6 +1,7 @@
 import Section from "../layout/Section";
 import Container from "../layout/Container";
 import Button from "../ui/Button";
+import { ArrowRight } from "lucide-react";
 
 const Pricing = () => {
   return (
@@ -31,7 +32,7 @@ const Pricing = () => {
               helped businesses like yours succeed online.
             </p>
             <ul className="grid w-full grid-cols-1 grid-rows-6 gap-x-5 gap-y-3 md:grid-cols-2 md:grid-rows-3 md:gap-x-20 md:gap-y-5">
-              <li className="flex gap-2 items-center">
+              <li className="flex items-center gap-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20px"
@@ -128,12 +129,14 @@ const Pricing = () => {
                 <span className="text-lg">Unlimited Requests</span>
               </li>
             </ul>
-            <div className="w-full rounded-md bg-[#D6DDED] px-8 py-2">
+            <div className="flex w-full items-center justify-between rounded-md bg-[#D6DDED] px-8 py-2">
               <h4 className="text-4xl font-bold">
                 $3,250
                 <span className="text-base font-normal"> /mo</span>
               </h4>
-              <span></span>
+              <span>
+                <ArrowRight size={32} />
+              </span>
             </div>
           </div>
         </div>

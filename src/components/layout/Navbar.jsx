@@ -94,8 +94,8 @@ const Navbar = () => {
                 </li>
               </ul>
               <div className="mt-8">
-                <Button variant="black" text="SignIn" />
-                <Button text="Sign Up" />
+                <Button black="bg-gray-700" text="SignIn" />
+                <Button variant="purple" text="Sign Up" />
               </div>
             </nav>
           </div>

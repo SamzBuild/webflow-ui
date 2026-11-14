@@ -1,6 +1,8 @@
 import Container from "../layout/Container";
 import Section from "../layout/Section";
 import { easeInOut, motion } from "motion/react";
+import webDesign from "../../assets/images/Rectangle28.png"
+
 const Services = () => {
   return (
     <Section id="services">
@@ -106,6 +108,7 @@ const Services = () => {
               that elevate your brand and engage your audience.
             </p>
           </motion.div>
+
           <motion.div
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -132,7 +135,7 @@ const Services = () => {
               From concept to launch, we create stunning, user-centric websites
               that elevate your brand and engage your audience.
             </p>
-            <img src="" alt="" />
+            <img src={webDesign} alt="" />
           </motion.div>
 
           <motion.div

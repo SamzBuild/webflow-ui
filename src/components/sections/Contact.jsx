@@ -7,27 +7,23 @@ const Contact = () => {
   return (
     <Section>
       <Container>
-        <motion.div
-          initial={{ scale: 0 }}
-          whileInView={{ scale: 1 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{
-            type: "spring",
-            stiffness: 50,
-            damping: 7,
-          }}
-          className="mx-auto max-w-2xl"
-        >
-          <h3 className="font-heading mb-12 text-center text-4xl font-semibold tracking-tight md:text-6xl">
+        <motion.div className="mx-auto max-w-2xl">
+          <motion.h3
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5 }}
+            className="font-heading mb-12 text-center text-4xl font-semibold tracking-tight md:text-6xl"
+            id="#contact"
+          >
             Let's Get In Touch
-          </h3>
+          </motion.h3>
           <form action="" className="flex flex-col justify-center">
             <label htmlFor="email" className="font-medium">
               email
             </label>
             <input
               type="email"
-              className="mb-4 rounded-md bg-white px-8 py-2"
+              className="mb-4 rounded-md bg-transparent px-8 py-4 ring-2 ring-gray-300"
               placeholder="example@email.com"
             />
 
@@ -36,8 +32,8 @@ const Contact = () => {
             </label>
             <input
               type="text"
-              className="mb-4 rounded-md bg-white px-8 py-2"
-              placeholder="Full Name"
+              className="mb-4 rounded-md bg-transparent px-8 py-4 ring-2 ring-gray-300"
+              placeholder="full Name"
             />
 
             <label htmlFor="message" className="font-medium">
@@ -47,10 +43,11 @@ const Contact = () => {
               name=""
               id=""
               rows="10"
-              className="mb-4 rounded-md bg-white px-8 py-2"
+              className="mb-4 rounded-md bg-transparent px-8 py-4 ring-2 ring-gray-300"
+              placeholder="write your message..."
             ></textarea>
 
-            <Button type="submit" text="Get In Touch"></Button>
+            <Button type="submit" text="Get In Touch" style="py-4"></Button>
           </form>
         </motion.div>
       </Container>

@@ -1,17 +1,24 @@
 import Section from "../layout/Section";
 import Container from "../layout/Container";
+import { easeInOut, motion } from "motion/react";
 
 const Trusted = () => {
   return (
     <Section>
       <Container>
-        <div className="mx-auto w-fit bg-neutral-50 py-4 px-12 rounded-md">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.7 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.4, ease: easeInOut }}
+          viewport={{ once: true }}
+          className="mx-auto w-fit rounded-md bg-neutral-50 px-12 py-4"
+        >
           <h3 className="text-xl font-semibold">
             5.0 <span className="text-black/30">Based On </span>145
             <span className="text-black/30"> Reviews</span>
           </h3>
           <span>⭐⭐⭐⭐⭐</span>
-        </div>
+        </motion.div>
       </Container>
     </Section>
   );
